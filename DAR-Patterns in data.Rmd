@@ -11,6 +11,7 @@ require(mosaic)
 require(tigerstats)
 ```
 <!-- We recommend you use git branches -- create a separate branch for each major section i.e. Introduction, Methods, Results, Inferential Results, and Discussion and Conclusions - leave the YAML block untouched until the final merge where you put in your own name !-->
+install.packages("curl")
 
 # Introduction
 

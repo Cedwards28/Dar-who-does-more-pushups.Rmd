@@ -13,7 +13,7 @@ require(tigerstats)
 <!-- We recommend you use git branches -- create a separate branch for each major section i.e. Introduction, Methods, Results, Inferential Results, and Discussion and Conclusions - leave the YAML block untouched until the final merge where you put in your own name !-->
 
 # Introduction
-Several years ago some MAT 111 students who were on the footbal team conducted a study of their team-mates.  The results are contained in the data frame `pushups` in the `tigerstats` package.
+Several years ago some MAT 111 students who were on the football team conducted a study of their team-mates.  The results are contained in the data frame `pushups` in the `tigerstats` package.
 
 ```{r }
 data(pushups)
@@ -83,7 +83,7 @@ The whisker boxplot, shows that the middle 50% of the data for both each group o
 favstats(pushups~position, data = pushups)
 ```
 
-The numerical results come from the “favstats” function, the numbers for the minima, and maxima are very different for both positions of players. Next is the comparison between the mean is far better of a comparison due to the possibility of the first being base on a single player in each group. The measure of  center for the LINE players 17.12%  is, considerably lower than the SKILL mean of 49.72%. It’s clear to see that LINE players preform less push-ups, on average; during a two-minute period than SKILL player. 
+"   numerical results come from the “favstats” function, the numbers for the minima, and maxima are very different for both positions of players. Next is the comparison between the mean is far better of a comparison due to the possibility of the first being base on a single player in each group. The measure of  center for the LINE players 17.12 % is, considerably lower than the SKILL mean of 49.72%. It’s clear to see that LINE players preform less push-ups, on average; during a two-minute period than SKILL player. "
 The median shows SKILL players 
 
 

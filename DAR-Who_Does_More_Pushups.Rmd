@@ -74,7 +74,8 @@ bwplot(pushups ~ position,
 
 The whisker boxplot, shows that the middle 50% of the data for both each group of player observations, the median for both groups differs from the other STRONLY. The median for SKILL players is placed a bit a higher within 50% of its data, than the LINE player. This tells that bulk of LINE position groups data lie below 50% of its data. The violin plot supplements the Whisker-boxplot the thicker areas of the violin is crowded around the Q3, which is around the top 25% of its data for the SKILL level subjects.
 
- Both sets of data  have some outliers that were unusual, however, only one of the subject within the skill players group score was high above the rest of the subjects within the SKILL position group.
+ Both sets of data  have some outliers that were unusual, however, only one of the subjects within the SKILL position group scored
+ was high above the rest of the subjects within the SKILL position group.the observation data recorded him in with a total0f 108 push-ups preformed within a 2 min period.
 
 ## Numerical Results
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
@@ -82,19 +83,20 @@ The whisker boxplot, shows that the middle 50% of the data for both each group o
 ```{r}
 favstats(pushups~position, data = pushups)
 ```
-
-"   numerical results come from the “favstats” function, the numbers for the minima, and maxima are very different for both positions of players. Next is the comparison between the mean is far better of a comparison due to the possibility of the first being base on a single player in each group. The measure of  center for the LINE players 17.12 % is, considerably lower than the SKILL mean of 49.72%. It’s clear to see that LINE players preform less push-ups, on average; during a two-minute period than SKILL player. "
-The median shows SKILL players 
-
+The numerical results come from the “favstats” function, the numbers for the minima, and maxima are very different for both positions of players. Next is the comparison between the mean is far better of a comparison due to the possibility of the first being base on a single player in each group. The measure of  center for the LINE players 17.12%  is, considerably lower than the SKILL mean of 49.72%. It’s clear to see that LINE players preform less push-ups, on average; during a two-minute period than SKILL player. 
 
 
 
 # Inferential Results
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
-```{r}
+```{r T test}
 t.test(pushups~position,data=pushups,mu=0,alternative="two.sided")
 ```
+The test of significance that is used to conduct these inferential results is known as “the  t. test.” The test provides a five-step procedure to test whether the relationship between the subject groups position and the pushups preformed. 
+H0 = The NULL hypothesis is that there is no relationship between the subject’s position and the pushups preformed.
+Ha = The alternative hypothesis shows a relationship so strong that is exist because of a real relationship between the position and the number of push-ups, preformed.
+
 
 
 
@@ -102,6 +104,13 @@ t.test(pushups~position,data=pushups,mu=0,alternative="two.sided")
 # Discussion and Conclusion
 <!--State your overall conclusion.  This is also a good place to mention other Research Questions that came to mind as you were carrying out this study.!-->
 
+```{r}
+
+```
+the Empirical rule of thumb  
+
+  
+  
  After preforming the nessesary test
   
   

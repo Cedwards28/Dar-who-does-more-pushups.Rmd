@@ -74,6 +74,7 @@ bwplot(pushups ~ position,
 
 The whisker boxplot, shows that the middle 50% of the data for both each group of player observations, the median for both groups differs from the other STRONLY. The median for SKILL players is placed a bit a higher within 50% of its data, than the LINE player. This tells that bulk of LINE position groups data lie below 50% of its data. The violin plot supplements the Whisker-boxplot the thicker areas of the violin is crowded around the Q3, which is around the top 25% of its data for the SKILL level subjects.
 
+ Both sets of data  have some outliers that were unusual, however, only one of the subject within the skill players group score was high above the rest of the subjects within the SKILL position group.
 
 ## Numerical Results
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->

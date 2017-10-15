@@ -33,7 +33,7 @@ Our Research Question is:
 # Methods
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
- The reasearch question is about the relationship between two variables: one categorical variable "Position" which is a factor variable, and one quantitive discrete variable "pushups" which is a numeric, integer. The four methods, used in answering the question in mind will be, a One column histograms, grouped density plots, also, both a TTest, and favstats for numerical obervations.  
+ The reasearch question is about the relationship between two variables: one categorical variable "Position" which is a factor variable, and one quantitive discrete variable "pushups" which is a numeric, integer. The four methods, used in answering the question in mind will be, a One column histograms, grouped density plots, also, both a TTest, and favstats for numerical, inferencial, obervations and conclusions. The inclination in mind is that the subjects postion, and condtioning has something to do with the average number of pushups in each groups sample distribution, so, concider the players position to be the explanatory variable and the number of pushups preformed to be the response variable.
   
 
 
@@ -55,7 +55,7 @@ densityplot( ~ pushups,
 	adjust = 1.5)
 ```
 
- The two parallel density plots are grouped by player position, and show the resuts.  
+ The two parallel density plots are grouped by player position, and shows the resuts. the SKILL position distributions is right skewd. The LINE postion indcated by the blue line shows unimodial distribution. 
  
 ## Graphical Results
 <!--Your graph should have a good title, and axes should be labled as needed.  Discuss your graphical results, showing how they answer the research question.  Use specific features of the graph in your discussion.!-->
@@ -72,10 +72,9 @@ bwplot(pushups ~ position,
 	ylab = "Push-ups")
 ```
 
-The whisker boxplot, shows that the middle 50% of the data for both each group of player observations, the median for both groups differs from the other STRONLY. The median for SKILL players is placed a bit a higher within 50% of its data, than the LINE player. This tells that bulk of LINE position groups data lie below 50% of its data. The violin plot supplements the Whisker-boxplot the thicker areas of the violin is crowded around the Q3, which is around the top 25% of its data for the SKILL level subjects.
+The whisker boxplot, shows that the middle 50% of the data for each group of player observations, the median for both groups differs from the other STRONLY. The median for SKILL players is placed a bit a higher within 50% of its data, than the LINE player. This tells that bulk of LINE position groups data lie below 50% of its data. The violin plot supplements the Whisker-boxplot the thicker areas of the violin is crowded around the Q3, which is around the top 25% of its data for the SKILL level subjects.
 
- Both sets of data  have some outliers that were unusual, however, only one of the subjects within the SKILL position group scored
- was high above the rest of the subjects within the SKILL position group.the observation data recorded him in with a total0f 108 push-ups preformed within a 2 min period.
+ Both sets of data  have some outliers that were unusual, however, only one of the subjects within the SKILL position group score was higher subjects within the SKILL position group. The with a total 0f 108 push-ups preformed within a two minute period.
 
 ## Numerical Results
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
@@ -83,7 +82,11 @@ The whisker boxplot, shows that the middle 50% of the data for both each group o
 ```{r}
 favstats(pushups~position, data = pushups)
 ```
-The numerical results come from the “favstats” function, the numbers for the minima, and maxima are very different for both positions of players. Next is the comparison between the mean is far better of a comparison due to the possibility of the first being base on a single player in each group. The measure of  center for the LINE players 17.12%  is, considerably lower than the SKILL mean of 49.72%. It’s clear to see that LINE players preform less push-ups, on average; during a two-minute period than SKILL player. 
+The numerical results come from the “favstats” function, the numbers for the minima, and maxima are very different for both positions of players. 
+
+Next, is a comparison between the means a better method due to the possibility of a compassion of the min, and max. result being base on a single player in each group. This method shows that in a two minute period 49.72% of SKILL postion subjects are more than likely going to preform between 31 to about 58 push-ups; compared to LINE position 10 to about 25 push-ups. 
+
+The measure of  center for the LINE players 17.12%  is, considerably lower than the SKILL mean of 49.72%. It’s clear to see that LINE players preform less push-ups, on average; during a two-minute period than SKILL player. 
 
 
 
@@ -93,11 +96,13 @@ The numerical results come from the “favstats” function, the numbers for the
 ```{r T test}
 t.test(pushups~position,data=pushups,mu=0,alternative="two.sided")
 ```
-The test of significance that is used to conduct these inferential results is known as “the  t. test.” The test provides a five-step procedure to test whether the relationship between the subject groups position and the pushups preformed. 
-H0 = The NULL hypothesis is that there is no relationship between the subject’s position and the pushups preformed.
-Ha = The alternative hypothesis shows a relationship so strong that is exist because of a real relationship between the position and the number of push-ups, preformed.
+The test of significance used to conduct these inferential results is known as “the  T. test.” The T.test provides a five-step procedure to test whether the relationship between the subjects position and the number of push-ups preformed is real.
 
+H0 = There is no relationship between the type of position and the average number of pushups.  
 
+The NULL hypothesis is that there is no relationship between the subject’s position and the number of pushups preformed.
+
+Ha = The alternative hypothesis is that the realationship between the subjects position and the number of push-ups performed on average is so strong that it exisit because of the source of the population sample was taken from real live subjects.
 
 
 
